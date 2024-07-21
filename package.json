@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react-router-dom": "^6.25.1",
-    "save": "^2.9.0"
-  }
-}
