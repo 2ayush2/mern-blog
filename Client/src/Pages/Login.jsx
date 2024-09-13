@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { UserContext } from '../Context/UserProvider';
-import { Navigate } from 'react-router-dom';
+import { Navigate,Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -78,12 +78,21 @@ const LoginForm = () => {
               required
             />
           </div>
+          
           <button 
             type="submit" 
             className="w-full py-2 px-4 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             Submit
           </button>
+          <br />
+          <br />
+          <div className="login-footer text-center ">
+          <span className='pl-2' >Register your account?<Link to="/register">Register</Link></span>
+         
+          
+          </div>
+         
         </form>
       </div>
     </div>

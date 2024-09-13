@@ -42,6 +42,7 @@ function CreatePost() {
       const result = await response.json();
       console.log(result);
       setRedirect(true); // Redirect after successful submission
+      alert(`${data.title}: Created sucessfully`)
 
     } catch (err) {
       setError('Failed to submit post');
