@@ -27,6 +27,8 @@ function EditPost() {
                     
                 });
                 setFile(result.file)
+               
+
 
             } catch (err) {
                 console.error('Error fetching post:', err);
@@ -76,6 +78,7 @@ function EditPost() {
             }
 
             setRedirect(true); // Redirect after successful update
+            alert(`${data.title}: updated sucessfully`)
         } catch (err) {
             console.error('Error:', err);
         }

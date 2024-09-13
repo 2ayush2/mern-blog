@@ -35,7 +35,7 @@ function InnerPage() {
                     </div>
                     <div className="p-6">
                         <h1 className="text-4xl font-bold text-gray-900 mb-4">{postInfo.title}</h1>
-                        <h2 className="text-2xl font-semibold text-gray-700 mb-4">{postInfo.summary}</h2>
+                       
                         <div className="prose prose-gray">
                             {/* Render post content here */}
                             <div dangerouslySetInnerHTML={{ __html: postInfo.content }} />
